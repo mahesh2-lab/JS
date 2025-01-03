@@ -1,23 +1,22 @@
-function add(a, b) {
-    return a + b;
+// today We will learn about the 
+
+// callback function
+
+// A callback function is a function that is passed as an argument to another function, to be “called back” at a later time.
+
+
+function milkshake(timepass){
+    console.log("Milkshake is order place");
+    timepass();
+    console.log("Milkshake is ready");
 }
 
-function subtract(a, b) {
-    return a - b;
+function timepass(){
+    console.log("chugalya");
 }
 
-function multiply(a, b) {
-    return a * b;
-}
 
-function divide(a, b) {
-    if (b === 0) {
-        throw new Error("Division by zero is not allowed.");
-    }
-    return a / b;
-}
+milkshake(timepass)
 
-console.log("Addit  ion: " + add(5, 3));
-console.log("Subtraction: " + subtract(5, 3));
-console.log("Multiplication: " + multiply(5, 3));
-console.log("Division: " + divide(5, 3));
+
+//// end of callback function
